@@ -26,7 +26,7 @@ export default function GroupItem({ group, index }) {
       }
     >
       <h1> {group.name} </h1>
-      <p>
+      <span>
         {group.closed ? "Закрытая" : "Открытая"} <br />
         Количество подписчиков: {group.members_count} <br />
         <span
@@ -38,7 +38,7 @@ export default function GroupItem({ group, index }) {
           Количество друзей: {group.friends ? group.friends.length : 0}
           {friends_list}
         </span>
-      </p>
+      </span>
     </SimpleCell>
   );
 }
